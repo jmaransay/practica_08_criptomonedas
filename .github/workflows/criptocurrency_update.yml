@@ -9,6 +9,9 @@ env:
 on:
   # Trigger the workflow on push
   push:
+  repository_dispatch:
+    types: invocacion_desde_curl
+
 
 jobs:
   autoscrape:
