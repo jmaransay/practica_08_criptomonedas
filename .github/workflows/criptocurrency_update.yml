@@ -36,7 +36,7 @@ jobs:
         git config --local user.name "$AUTOMATION_USERNAME"
         git config --local user.email "$AUTOMATION_EMAIL"
         git add data/*
-        git commit -am "GH ACTION Headlines $(date)"
+        git commit -am "gh actions: Update cripto values$(date)"
         git push origin main
       env:
         REPO_KEY: ${{secrets.GITHUB_TOKEN}}
